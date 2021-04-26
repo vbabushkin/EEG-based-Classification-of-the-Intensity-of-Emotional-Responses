@@ -1,5 +1,5 @@
 # 10-fold CV of CNN on the dataset with 4 classes
-# 'HVHA', 'HVLA', 'LVHA', 'LVLA'
+# 'PVHA', 'PVLA', 'NVHA', 'NVLA'
 from __future__ import print_function
 
 import mat73
@@ -128,7 +128,7 @@ decay = 1e-4
 from sklearn.model_selection import KFold
 from sklearn.metrics import r2_score,accuracy_score
 
-classNames = ['HVLA', 'HVHA', 'LVLA', 'LVHA']
+classNames = ['PVLA', 'PVHA', 'NVLA', 'NVHA']
 n_classes = 4
 nfold = 10
 # plot train/test distribution
@@ -276,7 +276,7 @@ ax = sns.heatmap(df_cm, cbar_kws={'ticks': [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7
 bottom, top = ax.get_ylim()
 ax.set_ylim(bottom + 0.5, top - 0.5)
 ax.set_ylim(sorted(ax.get_xlim(), reverse=True))
-ax.set_yticklabels(('HVLA', 'HVHA', 'LVLA', 'LVHA'), rotation=90, fontsize="16", va="center")
+ax.set_yticklabels(('PVLA', 'PVHA', 'NVLA', 'NVHA'), rotation=90, fontsize="16", va="center")
 plt.tight_layout()
 plt.savefig('FIGURES/normCM_cnn_10fold_4_classes.pdf')
 

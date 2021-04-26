@@ -1,5 +1,5 @@
 # 10-fold CV of CNN on the dataset with 12 classes
-# HVHA_0, HVLA_0, LVHA_0, LVLA_0, 'HVHA_1', 'HVHA_2', 'HVLA_1', 'HVLA_2', 'LVHA_1', 'LVHA_2','LVLA_1', 'LVLA_2'
+# PVHA_0, PVLA_0, NVHA_0, NVLA_0, 'PVHA_1', 'PVHA_2', 'PVLA_1', 'PVLA_2', 'NVHA_1', 'NVHA_2','NVLA_1', 'NVLA_2'
 from __future__ import print_function
 
 import mat73
@@ -163,10 +163,10 @@ decay = 1e-4
 from sklearn.model_selection import KFold
 from sklearn.metrics import r2_score, accuracy_score
 
-classNames = ['HVHA_0', 'HVHA_1', 'HVHA_2',
-              'HVLA_0', 'HVLA_1', 'HVLA_2',
-              'LVHA_0', 'LVHA_1', 'LVHA_2',
-              'LVLA_0', 'LVLA_1', 'LVLA_2',
+classNames = ['PVHA_0', 'PVHA_1', 'PVHA_2',
+              'PVLA_0', 'PVLA_1', 'PVLA_2',
+              'NVHA_0', 'NVHA_1', 'NVHA_2',
+              'NVLA_0', 'NVLA_1', 'NVLA_2',
               ]
 n_classes = 12
 nfold = 10
