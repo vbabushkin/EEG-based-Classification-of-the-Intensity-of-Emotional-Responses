@@ -61,11 +61,11 @@ for clIdx in range(len(classes)):
         tmpF1CNN4.append(reportsDictCNN4[f][classes[clIdx]]['f1-score'])
 
     avgPrecisionSVM4[clIdx] = np.mean(tmpPrecisionSVM4)
-    avgRecallSVM4[clIdx] = np.mean(tmpF1SVM4)
+    avgRecallSVM4[clIdx] = np.mean(tmpRecallSVM4)
     avgF1SVM4[clIdx] = np.mean(tmpF1SVM4)
 
     avgPrecisionCNN4[clIdx] = np.mean(tmpPrecisionCNN4)
-    avgRecallCNN4[clIdx] = np.mean(tmpF1CNN4)
+    avgRecallCNN4[clIdx] = np.mean(tmpRecallCNN4)
     avgF1CNN4[clIdx] = np.mean(tmpF1CNN4)
 
 # 12 classes
@@ -101,11 +101,11 @@ for clIdx in range(len(classes)):
         tmpF1CNN12.append(reportsDictCNN12[f][classes[clIdx]]['f1-score'])
 
     avgPrecisionSVM12[clIdx] = np.mean(tmpPrecisionSVM12)
-    avgRecallSVM12[clIdx] = np.mean(tmpF1SVM12)
+    avgRecallSVM12[clIdx] = np.mean(tmpRecallSVM12)
     avgF1SVM12[clIdx] = np.mean(tmpF1SVM12)
 
     avgPrecisionCNN12[clIdx] = np.mean(tmpPrecisionCNN12)
-    avgRecallCNN12[clIdx] = np.mean(tmpF1CNN12)
+    avgRecallCNN12[clIdx] = np.mean(tmpRecallCNN12)
     avgF1CNN12[clIdx] = np.mean(tmpF1CNN12)
 
 
